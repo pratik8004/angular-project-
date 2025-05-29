@@ -1,0 +1,232 @@
+{
+  "signup": [
+    {
+      "id": "9999",
+      "email": "vijay lade",
+      "password": "ijabsidsvd"
+    },
+    {
+      "id": "bbe0",
+      "email": "pratikpatil8552@gmail.com",
+      "password": "ljbojv "
+    },
+    {
+      "id": "c5cf",
+      "email": "lnpakdnvSDLFKNK",
+      "password": "LKJNOJB"
+    },
+    {
+      "id": "2c36",
+      "email": "ouhoubg",
+      "password": "ougoug"
+    },
+    {
+      "id": "bfe8",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "5e62",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "4fe4",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "3b10",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "3552",
+      "email": null,
+      "password": null
+    },
+    {
+      "id": "5341",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "49b9",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "3459",
+      "email": "pratikpatil@8552",
+      "password": "awfaf"
+    },
+    {
+      "id": "f6dc",
+      "email": "pratikpatil8552@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "eb05",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "ed25",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "d9e1",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "ca6a",
+      "email": "pratikpatil8552@gmail.com",
+      "password": "ljbloj"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "productorder": "iPhone-15",
+      "customerName": "Pratik Patil",
+      "Address": "Thane",
+      "contact": "96325874741",
+      "paymentmethod": "Cash On Delivery"
+    },
+    {
+      "id": "2",
+      "productorder": "Galexy-Watch",
+      "customerName": "Rushi Patil",
+      "Address": "Mumbai",
+      "contact": "965864875",
+      "paymentmethod": "Cash On Delivery"
+    },
+    {
+      "id": "3",
+      "productorder": "Victus Laptop",
+      "customerName": "jayant pawar",
+      "Address": "sangli",
+      "contact": "41265975",
+      "paymentmethod": "Cash On Delivery"
+    },
+    {
+      "id": "4",
+      "productorder": "Victus Laptop",
+      "customerName": "Dipak patil",
+      "Address": "Thane",
+      "contact": "7475946888",
+      "paymentmethod": "UPI"
+    },
+    {
+      "id": "5",
+      "productorder": "Boat-Rockez",
+      "customerName": "Akash Barage",
+      "Address": "kolhapur",
+      "contact": "7458695475",
+      "paymentmethod": "UPI"
+    },
+    {
+      "id": "6",
+      "productorder": "Sony Smart-Tv",
+      "customerName": "bhushan Bachate",
+      "Address": "pimpri",
+      "contact": "9675848695",
+      "paymentmethod": "UPI"
+    },
+    {
+      "id": "7",
+      "productorder": "Samsung S23",
+      "customerName": "aditya Sawant",
+      "Address": "Kolhapur",
+      "contact": "86597548",
+      "paymentmethod": "UPI"
+    },
+    {
+      "id": "2",
+      "productorder": "Galexy-Watch",
+      "customerName": "Rushi Patil",
+      "Address": "Mumbai",
+      "contact": "965864875",
+      "paymentmethod": "UPI"
+    },
+    {
+      "id": "e49c",
+      "productorder": "iPhone-15",
+      "customerName": "bhushan bachate",
+      "Address": "nigdi",
+      "contact": ".13516354",
+      "paymentmethod": "UPI"
+    },
+    {
+      "id": "3a71",
+      "productorder": "Galexy-Watch",
+      "customerName": "Akash Barage",
+      "Address": "Thane",
+      "contact": "7475946888",
+      "paymentmethod": "UPI"
+    },
+    {
+      "id": "b88d",
+      "productorder": "SmartWatch",
+      "customerName": "Akash Barage",
+      "Address": "Nashik",
+      "contact": "7475946888",
+      "paymentmethod": "UPI"
+    }
+  ],
+  "Admin": [
+    {
+      "id": "9dba",
+      "email": "pratikpatil8552@gmail.com",
+      "password": "adcasca"
+    },
+    {
+      "id": "de47",
+      "email": "pratikpatil8552@gmail.com",
+      "password": "748976"
+    },
+    {
+      "id": "b21b",
+      "email": "pratikpatil8552@gmail.com",
+      "password": "7899654123"
+    },
+    {
+      "id": "3800",
+      "email": "pratikpatil8552@gmail.com",
+      "password": "oljh9ough0"
+    },
+    {
+      "id": "7891",
+      "email": "pratikpatil8552@gmail.com",
+      "password": "kihviyc"
+    },
+    {
+      "id": "ff8e",
+      "email": "suyash Bhosale",
+      "password": "125478"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 980000,
+      "image": "laptop.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Headphones",
+      "price": 7580,
+      "image": "headphones.jpg"
+    },
+    {
+      "id": "3",
+      "name": "mobile",
+      "price": 130000,
+      "image": "mobile.jpg"
+    }
+  ],
+  "cart": []
+}

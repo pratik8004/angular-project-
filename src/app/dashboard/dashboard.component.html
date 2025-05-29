@@ -1,0 +1,81 @@
+
+
+<!-- <div class="container">
+    <h2>Confirmed Orders</h2>
+    <table class="order-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Product</th>
+          <th>Customer Name</th>
+          <th>Address</th>
+          <th>Contact</th>
+          <th>Payment Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{ order.id }}</td>
+          <td>{{ order.productorder }}</td>
+          <td>{{ order.customerName }}</td>
+          <td>{{ order.Address }}</td>
+          <td>{{ order.contact }}</td>
+          <td>{{ order.paymentmethod }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+
+  <div class="container">
+    <h2>Confirmed Orders</h2>
+    
+    <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+      
+      <!-- Order ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Order ID</th>
+        <td mat-cell *matCellDef="let order"> {{ order.id }} </td>
+      </ng-container>
+  
+      <!-- Product Column -->
+      <ng-container matColumnDef="productorder">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Product</th>
+        <td mat-cell *matCellDef="let order"> {{ order.productorder }} </td>
+      </ng-container>
+  
+      <!-- Customer Name Column -->
+      <ng-container matColumnDef="customerName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Customer Name</th>
+        <td mat-cell *matCellDef="let order"> {{ order.customerName }} </td>
+      </ng-container>
+  
+      <!-- Address Column -->
+      <ng-container matColumnDef="Address">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Address</th>
+        <td mat-cell *matCellDef="let order"> {{ order.Address }} </td>
+      </ng-container>
+  
+      <!-- Contact Column -->
+      <ng-container matColumnDef="contact">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Contact</th>
+        <td mat-cell *matCellDef="let order"> {{ order.contact }} </td>
+      </ng-container>
+  
+      <!-- Payment Method Column -->
+      <ng-container matColumnDef="paymentmethod">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Payment Method</th>
+        <td mat-cell *matCellDef="let order"> {{ order.paymentmethod }} </td>
+      </ng-container>
+  
+      <!-- Table Header & Rows -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+    </mat-table>
+  
+    <!-- Pagination -->
+    <mat-paginator [pageSizeOptions]="[5, 10, 25]" showFirstLastButtons></mat-paginator>
+  </div>
+  
+  <button mat-raised-button (click)="logout()">Logout</button>
+

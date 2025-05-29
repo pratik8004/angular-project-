@@ -1,0 +1,87 @@
+<h1>Order-Details</h1>
+
+<!-- Order Form -->
+<mat-form-field>
+  <mat-label>Order Product</mat-label>
+  <input matInput [(ngModel)]="user.productorder" name="productorder" > 
+</mat-form-field>
+
+<!-- Customer Name -->
+<mat-form-field>
+  <mat-label>Customer Name</mat-label>
+  <input matInput [(ngModel)]="user.customerName" name="customerName" >
+</mat-form-field>
+
+<!-- Address (Editable) -->
+<mat-form-field>
+  <mat-label>Address</mat-label>
+  <input matInput [(ngModel)]="user.Address" name="Address">
+</mat-form-field>
+
+<!-- Contact -->
+<mat-form-field>
+  <mat-label>Contact</mat-label>
+  <input matInput [(ngModel)]="user.contact" name="contact" >
+</mat-form-field>
+
+<!-- Payment Method -->
+<mat-form-field>
+  <mat-label>Payment Method</mat-label>
+  <mat-select [(ngModel)]="user.paymentmethod" name="paymentmethod" >
+    <mat-option value="Cash On Delivery">Cash On Delivery</mat-option>
+    <mat-option value="UPI">UPI</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<br>
+<button mat-raised-button color="primary" (click)="createUser()">Confirm Order</button>
+
+<br><br>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Order Product Column -->
+    <ng-container matColumnDef="productorder">
+      <th mat-header-cell *matHeaderCellDef> Order Product </th>
+      <td mat-cell *matCellDef="let element"> {{ element.productorder }} </td>
+    </ng-container>
+  
+    <!-- Customer Name Column -->
+    <ng-container matColumnDef="customerName">
+      <th mat-header-cell *matHeaderCellDef> Customer Name </th>
+      <td mat-cell *matCellDef="let element"> {{ element.customerName }} </td>
+    </ng-container>
+  
+    <!-- Address Column -->
+    <ng-container matColumnDef="Address">
+      <th mat-header-cell *matHeaderCellDef> Address </th>
+      <td mat-cell *matCellDef="let element"> {{ element.Address }} </td>
+    </ng-container>
+  
+    <!-- Contact Column -->
+    <ng-container matColumnDef="contact">
+      <th mat-header-cell *matHeaderCellDef> Contact </th>
+      <td mat-cell *matCellDef="let element"> {{ element.contact }} </td>
+    </ng-container>
+  
+    <!-- Payment Method Column -->
+    <ng-container matColumnDef="paymentmethod">
+      <th mat-header-cell *matHeaderCellDef> Payment Method </th>
+      <td mat-cell *matCellDef="let element"> {{ element.paymentmethod }} </td>
+    </ng-container>
+  
+    
+    <!-- Actions Column -->
+   <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-raised-button color="primary" (click)="editUser(element)">Edit</button>
+      <button mat-raised-button color="warn" (click)=" deleteUser(element.id!)">order-cancel</button>
+      
+    </td>
+    </ng-container>
+  
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
