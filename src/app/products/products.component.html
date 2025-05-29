@@ -1,0 +1,23 @@
+<div class="product-list-wrapper">
+    <h1>Electronics Product's</h1>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let product of products">
+        <div class="product-item">
+          <img [src]="product.imageUrl" [alt]="product.name">
+          <div class="product-details">
+            <h6 class="name-head">{{ product.name }}</h6>
+            <div class="product-price">
+              <h6>Price: ₹{{ product.price }}</h6>
+            </div>
+            <div class="product-color">
+              <h6>Color: {{ product.color }}</h6>
+            </div>
+          </div>
+          <div class="product-footer">
+            <button mat-raised-button  (click)="addToCart(product)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

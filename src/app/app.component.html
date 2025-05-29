@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="app-title"></span>
+  <span class="spacer"></span>
+  <section>
+    
+    <div class="example-button-row">
+      <button mat-raised-button (click)="goToLogin()">Log-in</button>
+      <!-- <button mat-raised-button>Cart</button> -->
+      
+    </div>
+  </section>
+    
+ 
+</mat-toolbar>
+
+
+<app-left-sidebar
+  [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+  (changeIsLeftSidebarCollapsed)="changeIsLeftSidebarCollapsed($event)"
+/>
+
+<app-main
+  [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+  [screenWidth]="screenWidth()"
+/>
